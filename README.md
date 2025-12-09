@@ -3,9 +3,9 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM :BAILLY
+- PRÉNOM : Laura
+- GROUPE : B1
 - URL du site :
 - URL FIGMA :
 
