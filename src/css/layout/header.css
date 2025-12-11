@@ -1,54 +1,95 @@
+/* ===== HEADER (barre du haut) ===== */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: var(--nombre) calc(var(--nombre) * 4);
-  display: flex;
-  justify-content: center;
-  background-color: var(--couleur-site-principal);
+  width: 100%;                 
+  background-color: #010811;
+  padding: 16px 24px;          
+  z-index: 20;
 }
 
 .header-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
 }
 
 .header__link {
   display: flex;
   align-items: center;
-  gap: calc(var(--nombre) / 2);
+  gap: 8px;
   text-decoration: none;
-  color: var(--couleur-2);
+  color: #ffffff;
 }
 
 .header__logo {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 .header__link p {
-  font-size: 1rem;
+  margin: 0;
+  font-size: 16px;
   font-weight: 500;
 }
 
+
 .btn__menu {
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
   background: none;
   border: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--nombre) / 3);
-  cursor: pointer;
 }
 
 .menu__boutton__barre {
-  width: 24px;
-  height: 2px;
-  background-color: var(--couleur-2);
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+/* ===== MENU DÉROULANT ===== */
+
+/* bloc nav sous la barre */
+.header__menu {
+  position: absolute;
+  top: 100%;                    /* juste sous le header */
+  left: 0;
+  width: 100%;
+  background-color: #010811;
+  z-index: 19;
+}
+
+/* liste de liens, décalée du bord gauche */
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 12px 24px 16px;      /* 24px à gauche -> décale le menu */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.menu__item { }
+
+.menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
   display: block;
 }
+
+.menu__link:hover,
+.menu__link:focus-visible {
+  color: #8ab752;
+}
+
