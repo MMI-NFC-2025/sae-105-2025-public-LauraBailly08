@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    background-color: var(#ffff);
+    font-family: var(--chaîne);
+    font-size: var(--text-body);
+    line-height: 1.4;
+    letter-spacing: -0.03rem;
+    color: var(#000);
+}
