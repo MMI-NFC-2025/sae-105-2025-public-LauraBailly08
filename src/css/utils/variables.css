@@ -1,0 +1,12 @@
+/* Collection de variables */
+:root {
+  /* Mode 1 */
+  /* color */
+  --couleur: #8ab752;
+  --couleur-2: #ffffff;
+  --couleur-site-principal: #010811;
+  /* number */
+  --nombre: 0.625rem;
+  /* string */
+  --chaîne: Montserrat;
+}
