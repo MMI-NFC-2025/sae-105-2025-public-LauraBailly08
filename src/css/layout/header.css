@@ -1,4 +1,3 @@
-/* ===== HEADER (barre du haut) ===== */
 
 .header {
   position: fixed;
@@ -26,19 +25,23 @@
 }
 
 .header__logo {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .header__link p {
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
+}
+
+.header__titre {
+    font-family: "Montserrat";
 }
 
 
 .btn__menu {
-  width: 32px;
+  width: 40px;
   height: 24px;
   display: flex;
   flex-direction: column;
@@ -46,7 +49,10 @@
   cursor: pointer;
   background: none;
   border: none;
-  padding: 0;
+  margin-top: 38px;
+  margin-right: 45px;
+  margin-bottom: 33px;
+  margin-left: 0;
 }
 
 .menu__boutton__barre {
@@ -56,30 +62,27 @@
   background-color: #ffffff;
 }
 
-/* ===== MENU DÉROULANT ===== */
 
-/* bloc nav sous la barre */
 .header__menu {
   position: absolute;
-  top: 100%;                    /* juste sous le header */
+  top: 100%;                   
   left: 0;
   width: 100%;
   background-color: #010811;
   z-index: 19;
 }
 
-/* liste de liens, décalée du bord gauche */
 .menu__list {
   list-style: none;
   margin: 0;
-  padding: 12px 24px 16px;      /* 24px à gauche -> décale le menu */
+  padding: 12px 24px 16px;      
   display: flex;
   flex-direction: column;
   gap: 8px;
   text-align: left;
 }
 
-.menu__item { }
+
 
 .menu__link {
   color: #ffffff;

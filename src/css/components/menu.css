@@ -1,0 +1,40 @@
+/* NAV PLEIN ÉCRAN (ouvert) */
+.header__menu {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-color: #010811;
+  color: #ffffff;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px 24px;
+}
+
+/* état caché (avec l’attribut hidden en HTML) */
+.header__menu[hidden] {
+  display: none;
+}
+
+/* Liste des liens centrée verticalement comme sur ta maquette */
+.menu__list {
+  list-style: none;
+  margin: 80px 0 0 0;   /* espace sous le header du menu */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu__item { }
+
+.menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu__link:hover,
+.menu__link:focus-visible {
+  color: #8ab752;
+}
