@@ -1,58 +1,54 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Flying TapFest</title>
-        <link rel="stylesheet" type="text/css" href="assets/icones/icone logo.svg">
-        <script src="js/script.js"> </script>
-    </head>
-    <body>
-        <header>
-            <header class="header">
-            <a class="header_link" href="/"></a>
-                <img class="header__logo"
-                src="/assets/icones/icone logo.svg" alt="logo Flying TapFest">
-                    <p>Flying TapFest</p>
-                    <button class="btn-menu" 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying TapFest</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icones/icone logo.svg">
+    <script src="/src/js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a class="header__link" href="index.html">
+                <img class="header__logo" src="/assets/icones/icone logo.svg" alt="logo Flying TapFest">
+                <p>Flying TapFest</p>
+            </a>
+            <button class="btn__menu" 
                     aria-label="btn-menu"
                     aria-expanded="false"
                     aria-controls="mainNav">
-                    <span class ="menu_boutton_barre"
-                    aria-hidden="true"></span>
-                    <span class ="menu_boutton_barre"
-                    aria-hidden="true"></span>
-                    <span class ="menu_boutton_barre"
-                    aria-hidden="true"></span>
-                    </button>
-                </header>
-
-                <nav class="headermenu menu" id="mainNav" hidden>
-                    <ul class="menulist">
-                        <li class="menuitem">
-                            <a class="menulink" href="/index.html">Accueil</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="/festival.html">Le Festival</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="/">La programmation</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="/scène.html">Les scènes</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="/contact.html">Contact</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="/artistes.html">Liste artistes</a>
-                        </li>
-                        <li class="menuitem">
-                            <a class="menulink" href="/infos.html">Infos pratiques</a>
-                        </li>
-                    </ul>
-                </nav>
-        </header>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+            </button>
+        </div>
+            <nav class="header__menu" id="mainNav" hidden>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="/">Accueil</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/festival.html">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/programmation.html">La programmation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/scène.html">Les scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/artistes.html">Liste artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/infos.html">Infos pratiques</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
         <main>
             <section class="section__hero"></section>
                 <img class="image__hero" src="assets/img/image 1 page artiste.avif" alt="image-hero-infos">
@@ -108,20 +104,45 @@
             </section>
         </main>
         <footer class="footer">
-            <h2 class="footer__titre">Flying TapFest</h2>
-            <ul class="footer__text">
-                <li class="footer__text">Festival de claquette et de drones à Montbéliard</li>
-                <li class="footer__text">Le Festival</li>
-                <li class="footer__text">Le programme</li>
-                <li class="footer__text">Les artistes</li>
-                <li class="footer__text">Contact</li>
+        <h2 class="footer__titre">Flying TapFest</h2>
+        <p class="footer__description">Festival de claquette et de drones à Montbéliard</p>
+
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="/festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/programmation.html" class="footer__link">Le programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/artistes.html" class="footer__link">Les artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="/contact.html" class="footer__link">Contact</a>
+                </li>
             </ul>
-            <p class="foote__texte">flyingtapfest@gmail.com</p>
-            <p class="foote__texte">06 54 87 54 87</p>
-            <p class="foote__texte">Parc Près la Rose. Montbéliard</p>
-            <h2 class="footer__text">Suivez-nous</h2>
-            <a href="https://www.instagram.com/"><img class="icone instagram" src="assets/icones/icone insta.svg" alt="icone instagram">
-            <a href="https://www.facebook.com/?locale=fr_FR"><img class="icone fb" src="assets/icones/icone fb.svg" alt="icone facebook">
-        </footer>
-    </body>
+        </nav>
+         
+        <div class="footer__contact">
+            <p class="footer__text">flyingtapfest@gmail.com</p>
+            <p class="footer__text">06 54 87 54 87</p>
+            <p class="footer__text">Parc Près la Rose, Montbéliard</p>
+        </div>
+
+        <div class="footer__social">
+            <h3 class="footer__social__titre">Suivez-nous</h3>
+            <div class="footer__social__links">
+                <a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social__link">
+                    <img class="footer__icon" src="assets/icones/icone insta.svg" alt="icone instagram">
+                </a>
+                <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook" class="footer__social__link">
+                    <img class="footer__icon" src="assets/icones/icone fb.svg" alt="icone facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
+    
+
