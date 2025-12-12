@@ -10,4 +10,128 @@ body {
     line-height: 1.4;
     letter-spacing: -0.03rem;
     color: var(#000);
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
+.section__hero {
+  max-width: 1200px;
+  margin: 20px auto 0;   /* 20px d’espace au-dessus, centré */
+  padding: 0;
+  position: relative;
+  min-height: 100vh;                 /* plein écran */
+  padding: 96px 16px 40px;           /* espace pour le header + bas */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #010811;         /* fond si image ne charge pas */
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* image en fond */
+.hero__image {
+  background-image: url('/assets/img/imagemenu1.avif');
+  position: absolute;
+  inset: 0;                          /* top/right/bottom/left: 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* voile sombre léger comme sur ta maquette */
+.section__hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+  z-index: -1;
+}
+
+/* bloc central (date + titre + boutons + icône) */
+.hero__content {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: #ffffff;
+}
+
+/* pastille date en haut */
+.hero__date {
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 999px;
+  background-color: #8ab752;
+  color: #010811;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* titre "Flying TapFest" */
+.hero__titre {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* groupe de boutons */
+.hero__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* boutons */
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* bouton vert plein */
+.hero__btn--primary {
+  background-color: #8ab752;
+  color: #010811;
+}
+
+/* bouton contour blanc */
+.hero__btn--secondary {
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+}
+
+/* icône billet en bas */
+.hero__billeterie__icone {
+  margin-top: 24px;
+  width: 52px;
+  height: auto;
+}
+
+/* petit ajustement tablette+ si tu veux un peu plus grand */
+@media (min-width: 768px) {
+  .hero__titre {
+    font-size: 1.7rem;
+  }
+
+  .hero__content {
+    max-width: 360px;
+  }
+}
+
+}
+
+

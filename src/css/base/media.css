@@ -1,0 +1,23 @@
+.hero__image {
+    widht: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section__image {
+    widht: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hero__image {
+  width: 100%;      /* même largeur que .sectionhero */
+  height: auto;
+  display: block;
+}
+
+.section__image {
+    width: 100%;      /* même largeur que .sectionhero */
+    height: auto;
+    display: block;
+}

@@ -37,7 +37,7 @@
 
 .header__titre {
     font-family: "Montserrat";
-    font-size: 80px;
+    font-size: 24px;
 }
 
 
@@ -51,7 +51,7 @@
   background: none;
   border: none;
   margin-top: 38px;
-  margin-right: 45px;
+  margin-right: 8px;
   margin-bottom: 33px;
   margin-left: 0;
 }
