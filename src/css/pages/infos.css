@@ -1,319 +1,146 @@
 /* PAGE INFOS PRATIQUES */
 
-/* Hero section */
+/* Hero section: image as background with dark overlay, title centered */
 .infos__hero {
   position: relative;
   margin-top: 70px;
-  background-color: #010811;
   width: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  background: #010811;
 }
 
 .infos__hero .hero__image {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 350px;
+  height: 100%;
   object-fit: cover;
   display: block;
+  z-index: 0;
+  filter: brightness(0.45) contrast(0.95);
+}
+
+.infos__hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(1,8,17,0.55) 0%, rgba(1,8,17,0.75) 100%);
+  z-index: 1;
 }
 
 .infos__hero .hero__title {
   position: absolute;
-  bottom: 30px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 700;
   text-align: center;
   z-index: 2;
   width: 90%;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
 }
 
-/* Tarifs & Billetterie */
+/* Card style that overlaps the hero for the first content sections */
+.section--card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(1,8,17,0.12);
+  padding: 24px;
+  margin: -80px 16px 32px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Apply floating card look to existing first sections */
 .section__tarifs-billetterie {
-  padding: 40px 16px;
-  background-color: #ffffff;
+  padding: 32px 20px;
+  margin-top: -80px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(1,8,17,0.12);
+  background: #fff;
 }
 
-.tarifs__title {
-  margin: 0 0 24px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #010811;
-}
-
-.tarif__card {
-  background-color: #ffffff;
-  border: 2px solid #e0e0e0;
-  border-radius: 16px;
-  padding: 24px 16px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.tarif__card--highlight {
-  background-color: #8ab752;
-  border: none;
-  color: #ffffff;
-}
-
-.tarif__name {
-  margin: 0 0 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #010811;
-}
-
-.tarif__card--highlight .tarif__name {
-  color: #ffffff;
-}
-
-.tarif__description {
-  margin: 0 0 16px;
-  font-size: 14px;
-  color: #666;
-}
-
-.tarif__card--highlight .tarif__description {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.tarif__price {
-  margin: 16px 0;
-  font-size: 32px;
-  font-weight: 700;
-  color: #010811;
-}
-
-.tarif__card--highlight .tarif__price {
-  color: #ffffff;
-}
-
-.tarif__button {
-  display: inline-block;
-  background-color: #8ab752;
-  color: #ffffff;
-  padding: 12px 32px;
-  border-radius: 24px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.tarif__button:hover {
-  background-color: #7a9a42;
-}
-
-.tarif__button--white {
-  background-color: #ffffff;
-  color: #010811;
-}
-
-.tarif__button--white:hover {
-  background-color: #f0f0f0;
-}
-
-/* Hébergements */
-.section__hebergements {
-  padding: 40px 16px;
-  background-color: #ffffff;
-}
-
-.hebergements__header {
+/* Heading with green circular icon */
+.section__heading {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
-  margin-bottom: 24px;
-}
-
-.hebergements__title {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 600;
-  color: #010811;
-}
-
-.hebergements__icon {
-  width: 32px;
-  height: 32px;
-}
-
-.hebergement__card {
-  background-color: #f5f5f5;
-  border-radius: 16px;
-  padding: 20px;
   margin-bottom: 16px;
 }
-
-.hebergement__name {
-  margin: 0 0 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #010811;
-}
-
-.hebergement__text {
-  margin: 0 0 12px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.4;
-}
-
-.hebergement__list {
-  margin: 12px 0 0;
-  padding-left: 20px;
-  font-size: 14px;
-  color: #666;
-}
-
-.hebergement__list li {
-  margin-bottom: 6px;
-}
-
-/* Transport / Comment venir */
-.section__transport {
-  padding: 40px 16px;
-  background-color: #ffffff;
-}
-
-.transport__title {
-  margin: 0 0 24px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #010811;
-}
-
-.transport__card {
-  background-color: #f5f5f5;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 16px;
-}
-
-.transport__name {
-  margin: 0 0 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #010811;
-}
-
-.transport__text {
-  margin: 0 0 12px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.4;
-}
-
-.transport__list {
-  margin: 12px 0 0;
-  padding-left: 20px;
-  font-size: 14px;
-  color: #666;
-}
-
-.transport__list li {
-  margin-bottom: 6px;
-}
-
-/* FAQ */
-.section__faq {
-  padding: 40px 16px;
-  background-color: #ffffff;
-  color: #010811;
-}
-
-.faq__header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
-.faq__icon {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-}
-
-.faq__title {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 600;
-  color: #010811;
-}
-
-.faq__item {
-  background-color: rgba(1, 8, 17, 0.08);
-  border-radius: 8px;
-  margin-bottom: 12px;
-  padding: 0;
-  border: none;
-}
-
-.faq__question {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 16px;
-  margin: 0;
-  font-size: 14px;
-  font-weight: 500;
-  color: #8ab752;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  gap: 12px;
-}
-
-.faq__question::before {
-  content: "+";
+.section__heading .heading__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #8ab752;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #8ab752;
   flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(138,183,82,0.12);
 }
 
-.faq__item[open] .faq__question::before {
-  content: "−";
-}
-
-.faq__answer {
+/* Titles */
+.tarifs__title,
+.hebergements__title,
+.transport__title,
+.faq__title {
   margin: 0;
-  padding: 0 16px 16px 48px;
-  font-size: 13px;
-  color: rgba(1, 8, 17, 0.7);
-  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 700;
+  color: #010811;
 }
+
+/* Tarifs */
+.tarif__card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 14px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+.tarif__card--highlight { background: #8ab752; color: #fff; border: none; }
+.tarif__price { font-size: 28px; font-weight: 800; color: #010811; margin-top: 10px; }
+.tarif__card--highlight .tarif__price { color: #fff; }
+
+/* Hébergements / Transport */
+.hebergement__card, .transport__card { background: #f8f9fa; border-radius: 12px; padding: 18px; margin-bottom: 14px; }
+
+/* Team dark card (if present) */
+.team__card { background: linear-gradient(180deg,#020617 0%, #06121a 100%); color: #fff; border-radius: 14px; padding: 20px; margin: 18px 0; box-shadow: 0 10px 30px rgba(1,8,17,0.25); }
+.team__members { display: flex; gap: 16px; flex-direction: column; }
+.team__member { display:flex; gap:12px; align-items:center; }
+.team__avatar { width:56px; height:56px; border-radius:50%; overflow:hidden; border:4px solid rgba(138,183,82,0.95); flex-shrink:0; }
+.team__name { font-weight:600; font-size:15px; }
+
+/* FAQ: clearer white cards with round corners */
+.faq__item { background: #fff; border-radius: 10px; margin-bottom: 12px; border: 1px solid #eee; overflow: hidden; }
+.faq__question { display: flex; align-items: center; gap: 12px; padding: 14px 16px; font-weight: 600; color: #010811; cursor: pointer; background: none; }
+.faq__question::before { content: "+"; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: #8ab752; border: 2px solid #e6f0db; font-weight: 700; }
+.faq__item[open] .faq__question::before { content: "−"; background: #8ab752; color: #fff; border: none; }
+.faq__answer { padding: 0 16px 16px 56px; color: rgba(1,8,17,0.75); font-size: 14px; }
+
+/* Footer tweaks */
+.footer { background: #030615; color: #dfe8ee; padding: 48px 16px; margin-top: 40px; }
+.footer__titre { color: #fff; font-weight: 700; margin: 0 0 12px; }
 
 /* Responsive */
 @media (min-width: 768px) {
-  .infos__hero .hero__title {
-    font-size: 32px;
-  }
-
-  .tarifs__title,
-  .transport__title,
-  .faq__title,
-  .hebergements__title {
-    font-size: 24px;
-  }
-
-  .section__tarifs-billetterie {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .tarifs__title {
-    grid-column: 1 / -1;
-  }
+  .infos__hero { min-height: 480px; }
+  .infos__hero .hero__title { font-size: 40px; }
+  .section__tarifs-billetterie { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 40px; margin: -100px 48px 48px; }
+  .team__members { flex-direction: row; flex-wrap: wrap; }
+  .tarif__price { font-size: 32px; }
+  .faq__question { font-size: 16px; }
 }
+
+@media (max-width: 767px) {
+  .infos__hero { min-height: 380px; }
+  .infos__hero .hero__title { font-size: 28px; padding: 0 12px; }
+  .section__tarifs-billetterie, .section__hebergements { margin: -70px 12px 24px; padding: 20px; }
+}
+
+/* End of page styles */
