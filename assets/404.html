@@ -3,16 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flying TapFest - Accueil</title>
-    <link rel="icon" type="image/svg+xml" href="assets/icones/icone logo.svg">
+    <title>Flying TapFest - Page non trouvée</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/icones/icone logo.svg">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="/src/js/script.js"></script>
+    <style>
+        .error404 {
+            min-height: calc(100vh - 70px - 400px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            text-align: center;
+        }
+        
+        .error404__number {
+            font-size: 120px;
+            font-weight: 700;
+            color: #8ab752;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .error404__title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #010811;
+            margin: 20px 0 12px;
+        }
+        
+        .error404__text {
+            font-size: 16px;
+            color: #666;
+            margin: 0 0 32px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+        
+        .error404__button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background-color: #8ab752;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .error404__button:hover {
+            background-color: #7aa642;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(138, 183, 82, 0.3);
+        }
+        
+        @media (min-width: 768px) {
+            .error404__number {
+                font-size: 180px;
+            }
+            
+            .error404__title {
+                font-size: 36px;
+            }
+            
+            .error404__text {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <div class="header-container">
-            <a class="header__link" href="index.html">
+            <a class="header__link" href="/index.html">
                 <img class="header__logo" src="/assets/icones/icone logo.svg" alt="logo Flying TapFest">
-                <p>Flying TapFest</p>
+                <p class="header__titre">Flying TapFest</p>
             </a>
             <button class="btn__menu" 
                     aria-label="btn-menu"
@@ -27,13 +101,13 @@
         <nav class="header__menu" id="mainNav" hidden>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link" href="/">Accueil</a>
+                    <a class="menu__link" href="/index.html">Accueil</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="/festival.html">Le Festival</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/programmation.html">La programmation</a>
+                    <a class="menu__link" href="/programme.html">La programmation</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="/scène.html">Les scènes</a>
@@ -42,20 +116,25 @@
                     <a class="menu__link" href="/contact.html">Contact</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/artistes.html">Liste artistes</a>
+                    <a class="menu__link" href="/artistes.html">Artistes</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="/infos.html">Infos pratiques</a>
                 </li>
             </ul>
         </nav>
-        </header>
-        <main>
-            <h1>Erreur 404</h1>
-            <p>La page que vous cherchez n’existe pas ou n’est plus disponible.</p>
-            <p><a href="/">Revenir à la page d’accueil</a></p>
-        </main>
-        <footer class="footer">
+    </header>
+    
+    <main class="error404">
+        <h1 class="error404__number">404</h1>
+        <h2 class="error404__title">Oups ! Page introuvable</h2>
+        <p class="error404__text">La page que vous recherchez n'existe pas ou a été déplacée. Ne perdez pas le rythme, retournez à l'accueil !</p>
+        <a href="/index.html" class="error404__button">
+            <span>← Retour à l'accueil</span>
+        </a>
+    </main>
+
+    <footer class="footer">
             <h2 class="footer__titre">Flying TapFest</h2>
             <p class="footer__description">Festival de claquette et de drones à Montbéliard</p>
 
@@ -82,15 +161,17 @@
                 <p class="footer__text">Parc Près la Rose, Montbéliard</p>
              </div>
 
-            <div class="footer__social">
-                <h3 class="footer__social__titre">Suivez-nous</h3>
-                    <a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social__link">
-                        <img class="footer__icon" src="assets/icones/icone insta.svg" alt="icone instagram">
-                    </a>
-                    <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook" class="footer__social__link">
-                        <img class="footer__icon" src="assets/icones/icone fb.svg" alt="icone facebook">
-                    </a>
-             </div>
+        <div class="footer__social">
+            <h3 class="footer__social__titre">Suivez-nous</h3>
+            <div class="footer__social__links">
+                <a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social__link">
+                    <img class="footer__icon" src="/assets/icones/icone insta.svg" alt="icone instagram">
+                </a>
+                <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook" class="footer__social__link">
+                    <img class="footer__icon" src="/assets/icones/icone fb.svg" alt="icone facebook">
+                </a>
+            </div>
+        </div>
         </footer>
     </body>
 </html>
