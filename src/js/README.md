@@ -6,8 +6,10 @@
 - NOM :BAILLY
 - PRÉNOM : Laura
 - GROUPE : B1
-- URL du site :
-- URL FIGMA :
+- URL du site : https://fflyingtapfest.netlify.app/
+                    https://fflyingtapfest.bailly-laura.fr/
+                    
+- URL FIGMA :https://www.figma.com/design/hDqA64xG52R97KgyOu4R9h/maquette-festival?node-id=29-17&t=8WKSklHgPjZ2ZjPU-1
 
 ## Sujet
 
@@ -31,3 +33,5 @@ http://127.0.0.1:5500/artiste2.html
 
 page ou se trouve mon CTA en bas pour remonter la page :
 url : http://127.0.0.1:5500/index.html
+
+url site ne
