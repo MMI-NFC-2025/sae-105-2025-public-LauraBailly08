@@ -1,0 +1,98 @@
+/* CTA FLOTTANT - BILLETS */
+
+.cta__floating {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  animation: slideInUp 0.5s ease-out;
+}
+
+.cta__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #8ab752 0%, #7aa642 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(138, 183, 82, 0.3);
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.cta__button:hover {
+  background: linear-gradient(135deg, #7aa642 0%, #6a9532 100%);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(138, 183, 82, 0.4);
+}
+
+.cta__button:active {
+  transform: translateY(-2px);
+}
+
+.cta__icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__button--mobile {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.cta__button--mobile .cta__text {
+  display: none;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cta__floating {
+    bottom: 32px;
+    right: 32px;
+  }
+
+  .cta__button--mobile {
+    width: auto;
+    border-radius: 50px;
+  }
+
+  .cta__button--mobile .cta__text {
+    display: inline;
+  }
+
+  .cta__button {
+    padding: 16px 32px;
+    font-size: 17px;
+  }
+}
+
+/* Animation au scroll - le bouton peut disparaître/apparaître */
+.cta__floating.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(100px);
+}
