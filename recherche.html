@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying TapFest - Recherche</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icones/icone logo.svg">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/css/pages/recherche.css">
+    <script src="src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a class="header__link" href="index.html">
+                <img class="header__logo" src="assets/icones/icone logo.svg" alt="logo Flying TapFest">
+                <p class="header__titre">Flying TapFest</p>
+            </a>
+            <button class="btn__menu" aria-label="btn-menu" aria-expanded="false" aria-controls="mainNav">
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav class="header__menu" id="mainNav" hidden>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Accueil</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="festival.html">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="programme.html">La programmation</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="scène.html">Les scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="artistes.html">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="infos.html">Infos pratiques</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section__hero recherche__hero">
+            <div class="hero__overlay"></div>
+            <h1 class="hero__title">Recherche</h1>
+        </section>
+
+        <section class="recherche__content">
+            <div class="recherche__container">
+                <h2 class="recherche__subtitle">Que recherchez-vous ?</h2>
+                
+                <form class="recherche__form" action="#" method="get">
+                    <div class="search__input-group">
+                        <input 
+                            type="search" 
+                            id="searchQuery" 
+                            name="q" 
+                            class="search__input" 
+                            placeholder="Artiste, spectacle, information..."
+                            aria-label="Rechercher sur le site"
+                            required
+                        >
+                        <button type="submit" class="search__button" aria-label="Lancer la recherche">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="search__filters">
+                        <p class="filters__title">Filtrer par :</p>
+                        <div class="filters__options">
+                            <label class="filter__option">
+                                <input type="radio" name="filter" value="all" checked>
+                                <span class="filter__label">Tout</span>
+                            </label>
+                            <label class="filter__option">
+                                <input type="radio" name="filter" value="artistes">
+                                <span class="filter__label">Artistes</span>
+                            </label>
+                            <label class="filter__option">
+                                <input type="radio" name="filter" value="programme">
+                                <span class="filter__label">Programme</span>
+                            </label>
+                            <label class="filter__option">
+                                <input type="radio" name="filter" value="infos">
+                                <span class="filter__label">Infos pratiques</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="recherche__suggestions">
+                    <h3 class="suggestions__title">Suggestions populaires</h3>
+                    <div class="suggestions__list">
+                        <a href="artistes.html" class="suggestion__tag">Tous les artistes</a>
+                        <a href="programme.html" class="suggestion__tag">Programme complet</a>
+                        <a href="infos.html#tarifs" class="suggestion__tag">Tarifs</a>
+                        <a href="infos.html#hebergement" class="suggestion__tag">Hébergement</a>
+                        <a href="contact.html" class="suggestion__tag">Contact</a>
+                    </div>
+                </div>
+
+                <div class="recherche__results" id="searchResults" hidden>
+                    <h3 class="results__title">Résultats de recherche</h3>
+                    <div class="results__list">
+                        <!-- Les résultats s'afficheront ici via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer__titre">Flying TapFest</h2>
+        <p class="footer__description">Festival de claquette et de drones à Montbéliard</p>
+
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programme.html" class="footer__link">Le programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artistes.html" class="footer__link">Les artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__text">flyingtapfest@gmail.com</p>
+            <p class="footer__text">06 54 87 54 87</p>
+            <p class="footer__text">Parc Près la Rose, Montbéliard</p>
+        </div>
+
+        <div class="footer__social">
+            <h3 class="footer__social__titre">Suivez-nous</h3>
+            <div class="footer__social__links">
+                <a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social__link">
+                    <img class="footer__icon" src="assets/icones/icone insta.svg" alt="icone instagram">
+                </a>
+                <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook" class="footer__social__link">
+                    <img class="footer__icon" src="assets/icones/icone fb.svg" alt="icone facebook">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
