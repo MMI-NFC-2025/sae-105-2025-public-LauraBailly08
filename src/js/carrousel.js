@@ -1,4 +1,4 @@
-// Carrousel qui se trouve dans ma page artiste
+// Carrousel qui se trouve dans ma page artiste 1, quand on clique dans la page artistes sur la première car du première artistes il y a un caroussel en bas de la page avec 3 photos
 document.addEventListener('DOMContentLoaded', function() {
   const carrousels = document.querySelectorAll('.carrousel');
 
