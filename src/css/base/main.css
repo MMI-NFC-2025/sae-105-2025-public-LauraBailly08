@@ -133,6 +133,17 @@ body {
   border-radius: 24px;
   padding: 20px 24px;
   color: #ffffff;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.info__card:hover,
+.info__card:focus-visible {
+  background-color: #0f1f2e;
+  transform: translateY(-4px);
 }
 
 .info__titre {
