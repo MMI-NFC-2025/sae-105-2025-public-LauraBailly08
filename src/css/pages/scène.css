@@ -1,0 +1,198 @@
+/* PAGE SCÈNES */
+
+/* Hero section */
+.scene__hero {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  background: #010811;
+}
+
+.scene__hero .hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
+  filter: brightness(0.5) contrast(0.95);
+}
+
+.scene__hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(1,8,17,0.4) 0%, rgba(1,8,17,0.8) 100%);
+  z-index: 1;
+}
+
+.scene__hero .hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+}
+
+/* Intro section */
+.scene__intro {
+  background: #ffffff;
+  padding: 32px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.scene__intro__text {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Content section */
+.scene__content {
+  background: #ffffff;
+  padding: 32px 16px;
+}
+
+/* Scene cards */
+.scene__card {
+  max-width: 980px;
+  margin: 0 auto 32px;
+}
+
+.scene__card__image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.scene__card__content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.scene__card__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #010811;
+}
+
+.scene__card__description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 20px 0;
+}
+
+/* Artists section */
+.scene__artists {
+  margin-top: 20px;
+}
+
+.scene__artists h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #010811;
+}
+
+.artist__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.artist__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist__name {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #010811;
+}
+
+.artist__time {
+  font-size: 12px;
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .scene__hero {
+    min-height: 360px;
+  }
+
+  .scene__hero .hero__title {
+    font-size: 36px;
+  }
+
+  .scene__intro {
+    padding: 48px;
+  }
+
+  .scene__intro__text {
+    font-size: 15px;
+  }
+
+  .scene__content {
+    padding: 48px;
+  }
+
+  .scene__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  .scene__card:nth-child(2) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .scene__card:nth-child(2) .scene__card__image {
+    order: 2;
+  }
+
+  .scene__card:nth-child(2) .scene__card__content {
+    order: 1;
+  }
+
+  .scene__card__image {
+    height: 340px;
+    margin-bottom: 0;
+  }
+
+  .scene__card__title {
+    font-size: 20px;
+  }
+
+  .scene__card__description {
+    font-size: 14px;
+  }
+
+  .artist__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}

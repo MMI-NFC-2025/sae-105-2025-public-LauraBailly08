@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flying TapFest - Accueil</title>
+    <title>Flying TapFest - Scènes</title>
     <link rel="icon" type="image/svg+xml" href="assets/icones/icone logo.svg">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/pages/scène.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="src/css/button.css">
-    <link rel="stylesheet" type="text/css" href="src/css/menu.css">
     <script src="/src/js/script.js"></script>
 </head>
 
@@ -31,114 +30,86 @@
 
         <nav class="header__menu" id="mainNav" hidden>
             <ul class="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link" href="/">Accueil</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/festival.html">Le Festival</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/programmation.html">La programmation</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/scène.html">Les scènes</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/contact.html">Contact</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/artistes.html">Liste artistes</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/infos.html">Infos pratiques</a>
-                </li>
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/festival.html">Le Festival</a></li>
+                <li class="menu__item"><a class="menu__link" href="/programme.html">La programmation</a></li>
+                <li class="menu__item"><a class="menu__link" href="/artistes.html">Les artistes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/scène.html">Les scènes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/infos.html">Infos pratiques</a></li>
             </ul>
         </nav>
     </header>
-        <main>
-            <section class="section__hero">
-                <img class="image__hero" src="assets/img/parc1.avif" alt="image-hero-scène">
-                <h1 class="hero-title" >La scène</h1>
-            </section>
-            <section class="section__scène">
-                <p class="texte__scène">
-                    Les scènes du Flying TapFest 
-                    vous offrira une atmosphère 
-                    chaleureuse grâce à son cadre 
-                    unique : le parc Le Pré La Rose.
-                    Vous y découvrirez des 
-                    performances inoubliables 
-                    portées par des artistes de 
-                    renom.
-                </p>
-            </section>
-            <section class="section__scène1">
-                <img src="assets/img/image scene pas flou.avif" alt="image scène principale"loading="lazy" >
-                <h2 class="titre__scène1">Scène principale</h2>
-                <p class="texte__scène1">
-                    La plus grande scène capable 
-                    d'accueillir un grand nombre de
-                    festivaliers en compagnie de 
-                    spectacles ambitieux
-                </p>
-                <h2 class="titre__scène1">
-                    Artistes sur cette scène :
-                </h2>
-                <h3 class="titre__dates__scène1">Samedi 7 juin</h3>
 
-                
-                    Savion Glover 18h
-                    Gregory Hines 20h
-                </p>
-                <h3 class="titre__dates__scène1">Dimanche 8 juin</h3>
-                <p class="texte__scène1">
-                    Michelle Dorrance 20h
-                </p>
-            </section>
-            <section class="section__scène2">
-                <img src="assets/img/image scene 2.avif" alt="image scène secondaire"loading="lazy" >
-                <h2 class="titre__scène2">Scène secondaire</h2>
-                <p class="texte__scène2">
-                    Une scène intimiste pour des
-                    performances solo ou en duo
-                    permettant une connexion unique
-                    avec les spectateurs.
-                </p>
-                <h2 class="titre__scène2">
-                    Artistes sur cette scène :
-                </h2>
-                <h3 class="titre__dates__scène2">Samedi 7 juin</h3>
-                <p class="texte__scène2">
-                    Brenda Buffalina 18h 
-                    Jason Samuels 20h
-                </p>
-                <h3 class="titre__dates__scène2">Dimanche 8 juin</h3>
-                <p class="texte__scène2">
-                    Chloé Arnold 18h
-                </p>
-            </section>
-        </main>
-     <footer class="footer">
+    <main>
+        <section class="section__hero scene__hero">
+            <img class="hero__image" src="assets/img/image 1 scene.avif" alt="Scènes">
+            <h1 class="hero__title">La Scène</h1>
+        </section>
+
+        <section class="scene__intro">
+            <p class="scene__intro__text">Les scènes du Flying TapFest vous offriront une atmosphère chaleureuse grâce à son cadre unique : le parc Le Pré La Rose. Vous y découvrez des performances inoubliables portées par des artistes de renom.</p>
+        </section>
+
+        <section class="scene__content">
+            <div class="scene__card">
+                <img src="assets/img/image scene 1.avif" alt="Scène principale" class="scene__card__image">
+                <div class="scene__card__content">
+                    <h2 class="scene__card__title">Scène principale</h2>
+                    <p class="scene__card__description">La plus grande scène capable d'accueillir un grand nombre de festivaliers en compagnie de personnalités ambitions.</p>
+                    
+                    <div class="scene__artists">
+                        <h4>Artistes sur cette scène :</h4>
+                        <div class="artist__list">
+                            <div class="artist__item">
+                                <p class="artist__name">Le samedi 7 juin</p>
+                                <p class="artist__time">Savion Glover 18h<br>Gregory Hines 20h</p>
+                            </div>
+                            <div class="artist__item">
+                                <p class="artist__name">Le dimanche 8 juin</p>
+                                <p class="artist__time">Michelle Dorance 20h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene__card">
+                <img src="assets/img/scene 2.avif" alt="Scène secondaire" class="scene__card__image">
+                <div class="scene__card__content">
+                    <h2 class="scene__card__title">Scène secondaire</h2>
+                    <p class="scene__card__description">Une scène intimiste pour des performances solo ou en duo permettant une connexion unique avec les spectateurs.</p>
+                    
+                    <div class="scene__artists">
+                        <h4>Artistes sur cette scène :</h4>
+                        <div class="artist__list">
+                            <div class="artist__item">
+                                <p class="artist__name">Le samedi 7 juin</p>
+                                <p class="artist__time">Brenda Bufalina 18h<br>Jason Samuels 20h</p>
+                            </div>
+                            <div class="artist__item">
+                                <p class="artist__name">Le dimanche 8 juin</p>
+                                <p class="artist__time">Chioe Arnold 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <h2 class="footer__titre">Flying TapFest</h2>
         <p class="footer__description">Festival de claquette et de drones à Montbéliard</p>
 
         <nav class="footer__nav">
             <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="/festival.html" class="footer__link">Le Festival</a>
-                </li>
-                <li class="footer__item">
-                    <a href="/programme.html" class="footer__link">Le programme</a>
-                </li>
-                <li class="footer__item">
-                    <a href="/artistes.html" class="footer__link">Les artistes</a>
-                </li>
-                <li class="footer__item">
-                    <a href="/contact.html" class="footer__link">Contact</a>
-                </li>
+                <li class="footer__item"><a href="/festival.html" class="footer__link">Le festival</a></li>
+                <li class="footer__item"><a href="/programme.html" class="footer__link">Le programme</a></li>
+                <li class="footer__item"><a href="/artistes.html" class="footer__link">Les artistes</a></li>
+                <li class="footer__item"><a href="/contact.html" class="footer__link">Contact</a></li>
             </ul>
         </nav>
-         
+
         <div class="footer__contact">
             <p class="footer__text">flyingtapfest@gmail.com</p>
             <p class="footer__text">06 54 87 54 87</p>
@@ -148,15 +119,12 @@
         <div class="footer__social">
             <h3 class="footer__social__titre">Suivez-nous</h3>
             <div class="footer__social__links">
-                <a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social__link">
-                    <img class="footer__icon" src="assets/icones/icone insta.svg" alt="icone instagram">
-                </a>
-                <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook" class="footer__social__link">
-                    <img class="footer__icon" src="assets/icones/icone fb.svg" alt="icone facebook">
-                </a>
+                <a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social__link"><img class="footer__icon" src="assets/icones/icone insta.svg" alt="icone instagram"></a>
+                <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook" class="footer__social__link"><img class="footer__icon" src="assets/icones/icone fb.svg" alt="icone facebook"></a>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
     
