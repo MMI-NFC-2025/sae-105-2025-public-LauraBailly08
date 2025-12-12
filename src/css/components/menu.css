@@ -42,6 +42,28 @@
   color: #8ab752;
 }
 
+/* Lien recherche avec icône */
+.menu__link--search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: rgba(138, 183, 82, 0.1);
+  border: 1px solid rgba(138, 183, 82, 0.3);
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+.menu__link--search:hover {
+  background: rgba(138, 183, 82, 0.2);
+  border-color: #8ab752;
+}
+
+.menu__search-icon {
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
 .menu__billeterie {
   display: flex;
   align-items: center;
