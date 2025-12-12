@@ -117,6 +117,76 @@ body {
   height: auto;
   margin: 0 auto;
 }
+/* === BLOCS INFOS SOUS LE HERO === */
+
+.section__info {
+  padding: 40px 16px 32px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* chaque carte arrondie */
+.info__card {
+  background-color: #020b17;
+  border-radius: 24px;
+  padding: 20px 24px;
+  color: #ffffff;
+}
+
+.info__titre {
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.info__text {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+/* === BLOC IMAGE + BOUTON RÉSERVATION === */
+
+.section__reservation {
+  margin-top: 24px;
+  position: relative;
+}
+
+/* image pleine largeur */
+.section__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* bouton vert centré qui chevauche le bas de la photo */
+.section__btn-reservation {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;                 /* distance par rapport au bas de l’image */
+  transform: translateX(-50%);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 24px;
+  border-radius: 999px;
+  background-color: #8ab752;
+  color: #010811;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* petite icône à gauche du texte */
+.section__icon-reservation {
+  width: 20px;
+  height: auto;
+}
+
+
 
 
 
