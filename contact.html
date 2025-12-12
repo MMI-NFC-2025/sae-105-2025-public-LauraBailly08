@@ -4,6 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying TapFest - Contact</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icones/icone logo.svg">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/pages/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a class="header__link" href="index.html">
+                <img class="header__logo" src="/assets/icones/icone logo.svg" alt="logo Flying TapFest">
+                <p class="header__titre">Flying TapFest</p>
+            </a>
+            <button class="btn__menu" aria-label="btn-menu" aria-expanded="false" aria-controls="mainNav">
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+                <span class="menu__boutton__barre" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav class="header__menu" id="mainNav" hidden>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="/festival.html">Le Festival</a></li>
+                <li class="menu__item"><a class="menu__link" href="/programme.html">La programmation</a></li>
+                <li class="menu__item"><a class="menu__link" href="/artistes.html">Les artistes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/scène.html">Les scènes</a></li>
+                <li class="menu__item"><a class="menu__link" href="/infos.html">Infos pratiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section__hero contact__hero">
+            <img class="hero__image" src="assets/img/image 1 page artiste.avif" alt="Contact">
+            <h1 class="hero__title">Contactez-nous</h1>
+        </section>
+
+        <section class="section contact__content">
+            <div class="container">
+                <h2 class="contact__heading">Nos cordonées</h2>
+
+                <div class="contact__grid">
+                    <div class="contact__infos">
+                        <div class="contact__item">
+                            <img src="assets/icones/imagemail.avif" alt="email" class="contact__icon">
+                            <div>
+                                <h4>Email</h4>
+                                <p>flyingtapfest@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <img src="assets/icones/icone telephone.svg" alt="telephone" class="contact__icon">
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>06 54 87 54 87</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <img src="assets/icones/icone planete page festival.avif" alt="adresse" class="contact__icon">
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>Parc Près la Rose, Montbéliard</p>
+                            </div>
+                        </div>
+
+                        <h3 class="contact__heading">Nos réseaux sociaux</h3>
+                        <div class="contact__socials">
+                            <a href="https://www.instagram.com/" aria-label="Instagram"><img src="assets/icones/icone insta.svg" alt="insta"></a>
+                            <a href="https://www.facebook.com/" aria-label="Facebook"><img src="assets/icones/icone fb.svg" alt="fb"></a>
+                        </div>
+                    </div>
+
+                    <aside class="contact__formcard">
+                        <form class="form__contact" action="#" method="post">
+                            <h3>Formulaire de contact</h3>
+                            <label for="name">Nom complet</label>
+                            <input id="name" name="name" type="text" placeholder="Votre nom" required>
+
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="Votre@email.com" required>
+
+                            <label for="subject">Sujet</label>
+                            <input id="subject" name="subject" type="text" placeholder="Sujet">
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Votre message.."></textarea>
+
+                            <button class="btn btn--green" type="submit">
+                                <span>Envoyer</span>
+                            </button>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer__titre">Flying TapFest</h2>
+        <p class="footer__description">Festival de claquette et de drones à Montbéliard</p>
+
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="/festival.html" class="footer__link">Le festival</a></li>
+                <li class="footer__item"><a href="/programme.html" class="footer__link">Le programme</a></li>
+                <li class="footer__item"><a href="/artistes.html" class="footer__link">Les artistes</a></li>
+                <li class="footer__item"><a href="/contact.html" class="footer__link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <p class="footer__text">flyingtapfest@gmail.com</p>
+            <p class="footer__text">06 54 87 54 87</p>
+            <p class="footer__text">Parc Près la Rose, Montbéliard</p>
+        </div>
+
+        <div class="footer__social">
+            <h3 class="footer__social__titre">Suivez-nous</h3>
+            <div class="footer__social__links">
+                <a href="https://www.instagram.com/" aria-label="Instagram" class="footer__social__link"><img class="footer__icon" src="assets/icones/icone insta.svg" alt="icone instagram"></a>
+                <a href="https://www.facebook.com/?locale=fr_FR" aria-label="Facebook" class="footer__social__link"><img class="footer__icon" src="assets/icones/icone fb.svg" alt="icone facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flying TapFest - Accueil</title>
     <link rel="icon" type="image/svg+xml" href="assets/icones/icone logo.svg">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
