@@ -29,5 +29,5 @@ pages ou se trouvent mes carroussels :
 url : http://127.0.0.1:5500/artiste1.html
 http://127.0.0.1:5500/artiste2.html
 
-page ou se trouve mon CTA 
-url : 
+page ou se trouve mon CTA en bas pour remonter la page :
+url : http://127.0.0.1:5500/index.html
