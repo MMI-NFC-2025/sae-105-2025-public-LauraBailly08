@@ -14,57 +14,54 @@ body {
     padding-right: 0px;
 }
 
+/* === HERO FLYING TAPFEST === */
+
 .section__hero {
-  max-width: 1200px;
-  margin: 20px auto 0;   /* 20px d’espace au-dessus, centré */
-  padding: 0;
-  position: relative;
-  min-height: 100vh;                 /* plein écran */
-  padding: 96px 16px 40px;           /* espace pour le header + bas */
+  /* image de fond */
+  background-image: url('/assets/img/imagemenu1.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* bloc hero */
+  min-height: 100vh;
+  padding-top: 120px;      /* laisse la place au header */
+  padding-bottom: 80px;
   box-sizing: border-box;
+
+  /* centrage du contenu */
   display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
-  background-color: #010811;         /* fond si image ne charge pas */
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  color: #ffffff;
   font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* image en fond */
-.hero__image {
-  background-image: url('/assets/img/imagemenu1.avif');
-  position: absolute;
-  inset: 0;                          /* top/right/bottom/left: 0 */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-
-/* voile sombre léger comme sur ta maquette */
+/* voile sombre pour lisibilité */
 .section__hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
-  z-index: -1;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.7));
+  z-index: 0;
 }
 
-/* bloc central (date + titre + boutons + icône) */
+/* conteneur interne : date + titre + boutons + icône */
 .hero__content {
   position: relative;
+  z-index: 1;
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   gap: 20px;
-  color: #ffffff;
 }
 
-/* pastille date en haut */
+/* 6‑7 Juin 2026 */
 .hero__date {
   display: inline-block;
   padding: 8px 28px;
@@ -75,10 +72,10 @@ body {
   font-weight: 600;
 }
 
-/* titre "Flying TapFest" */
+/* Flying TapFest */
 .hero__titre {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -101,37 +98,25 @@ body {
   font-weight: 600;
 }
 
-/* bouton vert plein */
+/* Réserver mes billets */
 .hero__btn--primary {
   background-color: #8ab752;
   color: #010811;
 }
 
-/* bouton contour blanc */
+/* Le programme */
 .hero__btn--secondary {
+  background-color: transparent;
   border: 1.5px solid #ffffff;
   color: #ffffff;
-  background: transparent;
 }
 
-/* icône billet en bas */
+/* icône billet */
 .hero__billeterie__icone {
-  margin-top: 24px;
   width: 52px;
   height: auto;
+  margin: 0 auto;
 }
 
-/* petit ajustement tablette+ si tu veux un peu plus grand */
-@media (min-width: 768px) {
-  .hero__titre {
-    font-size: 1.7rem;
-  }
-
-  .hero__content {
-    max-width: 360px;
-  }
-}
-
-}
 
 
