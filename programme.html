@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flying TapFest - Accueil</title>
+    <title>Flying TapFest - Programme</title>
     <link rel="icon" type="image/svg+xml" href="assets/icones/icone logo.svg">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/css/button.css">
     <link rel="stylesheet" type="text/css" href="src/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="src/css/pages/programme.css">
     <script src="/src/js/script.js"></script>
 </head>
 
@@ -35,94 +36,107 @@
                     <a class="menu__link" href="/">Accueil</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/festival.html">Le Festival</a>
+                    <a class="menu__link" href="/festival.html">Le festival</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/programmation.html">La programmation</a>
+                    <a class="menu__link" href="/programme.html">Programme</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/scène.html">Les scènes</a>
+                    <a class="menu__link" href="/artistes.html">Artistes</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/contact.html">Contact</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/artistes.html">Liste artistes</a>
+                    <a class="menu__link" href="/scène.html">Scènes</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="/infos.html">Infos pratiques</a>
                 </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/contact.html">Contact</a>
+                </li>
             </ul>
+            <a class="menu__billeterie" href="assets/404.html">
+                <span>Billeterie</span>
+                <img class="menu__billeterie__icon" src="assets/icones/icone billeterie.svg" alt="Billeterie">
+            </a>
         </nav>
     </header>
-        <main>
-            <section class="section__hero">
-                <img class="hero__image" src="assets/img/drone15.avif"  alt="image-hero-programme">
-                <h1 class="hero-title">Programme Complet</h1>
-                <div class="dowload-button-container"></div>
-                    <button class="icone__hero"></button>
-                        <img src="assets/icones/logo dl.svg" alt="icone de téléchargement">
-                    <button>
-                    </div>
-                    <h2 class="hero__télécharger">Télécharger le programme</h2>
-            </section> 
-            <section class="section__programmation">
-                <p class="programmation__section">
-                    La programmation 
-                    Début : Samedi 7 juin 18h 
-                    Fin : Dimanche 8 juin 00h 
-                </p>
-            </section>
-            <section class="dates__programmation">
-                <h2 class="=dates__programmation">
-                    Samedi 7 juin
-                </h2>
-            </section>
-            <section class="=section__dates">
-                <p class="dates__programmation">
-                    Savion Glover - 18 h
-                    Scène principal
-                </p>
-            </section>
-            <section class="dates__programmation">
-                <p class="dates__programmation">
-                    Gregory Hines - 19 h 
-                    Scène principal
-                </p>
-                <p class="dates__programmation">
-                    Brenda Buffalina - 18 h  
-                    Scène secondaire
-                </p>
-                <p class="dates__programmation">
-                    Jason Samuels - 19 h  
-                    Scène secondaire
-                </p>
-            </section>
-            <section class="dates__programmation">
-                <h2 class="=dates__programmation">
-                    Dimanche 8 juin
-                </h2> 
-                <p class="dates__programmation">
-                   Chloé Arnold- 18h </br> 
-                    Scène secondaire
-                </p>
-                <p class="dates__programmation">
-                    Michelle Dorrance - 20 h </br> 
-                    Scène principal
-                </p>
-            </section>
-        </main>
-        <footer class="footer">
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section__hero programme__hero">
+            <img class="hero__image" src="assets/img/image page programme.avif" alt="Programme Complet">
+            <h1 class="hero__title">Programme Complet</h1>
+            <a href="#" class="download__button">
+                <img src="assets/icones/logo dl.svg" alt="Télécharger">
+                <span>Télécharger le programme</span>
+            </a>
+        </section>
+
+        <!-- Section Info Programmation -->
+        <section class="section__info-programme">
+            <div class="info__box">
+                <div>
+                    <h2 class="info__title">La Programmation</h2>
+                </div>
+                <div>
+                    <p class="info__text">Début : Samedi 7 juin 18h</p>
+                    <p class="info__text">Fin : Dimanche 8 juin 00h</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Samedi 7 juin -->
+        <section class="section__dates">
+            <button class="date__button">Samedi 7 juin</button>
+            
+            <div class="schedule__item">
+                <p class="artist__name">Savion Glover - 18 h</p>
+                <p class="scene__name">Scène principal</p>
+            </div>
+
+            <div class="schedule__item">
+                <p class="artist__name">Gregory Hines - 20h</p>
+                <p class="scene__name">Scène principal</p>
+            </div>
+
+            <div class="schedule__item">
+                <p class="artist__name">Brenda Bufalina - 18h</p>
+                <p class="scene__name">Scène secondaire</p>
+            </div>
+
+            <div class="schedule__item">
+                <p class="artist__name">Jason Samuel - 20h Scène secondaire</p>
+                <p class="scene__name">Scène secondaire</p>
+            </div>
+        </section>
+
+        <!-- Dimanche 8 juin -->
+        <section class="section__dates">
+            <button class="date__button">Dimanche 8 juin</button>
+
+            <div class="schedule__item">
+                <p class="artist__name">Chloé Arnold - 18h</p>
+                <p class="scene__name">Scène secondaire</p>
+            </div>
+
+            <div class="schedule__item">
+                <p class="artist__name">Michelle Dorance - 20h</p>
+                <p class="scene__name">Scène principale</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <h2 class="footer__titre">Flying TapFest</h2>
         <p class="footer__description">Festival de claquette et de drones à Montbéliard</p>
 
         <nav class="footer__nav">
             <ul class="footer__list">
                 <li class="footer__item">
-                    <a href="/festival.html" class="footer__link">Le Festival</a>
+                    <a href="/festival.html" class="footer__link">Le festival</a>
                 </li>
                 <li class="footer__item">
-                    <a href="/programmation.html" class="footer__link">Le programme</a>
+                    <a href="/programme.html" class="footer__link">Le programme</a>
                 </li>
                 <li class="footer__item">
                     <a href="/artistes.html" class="footer__link">Les artistes</a>
@@ -132,7 +146,7 @@
                 </li>
             </ul>
         </nav>
-         
+
         <div class="footer__contact">
             <p class="footer__text">flyingtapfest@gmail.com</p>
             <p class="footer__text">06 54 87 54 87</p>
@@ -152,6 +166,7 @@
         </div>
     </footer>
 </body>
+
 </html>
     
 

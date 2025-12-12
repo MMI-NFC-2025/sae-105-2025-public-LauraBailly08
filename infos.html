@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/css/button.css">
     <link rel="stylesheet" type="text/css" href="src/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="src/css/pages/infos.css">
     <script src="/src/js/script.js"></script>
 </head>
 
@@ -35,108 +36,117 @@
                     <a class="menu__link" href="/">Accueil</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/festival.html">Le Festival</a>
+                    <a class="menu__link" href="/festival.html">Le festival</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/programmation.html">La programmation</a>
+                    <a class="menu__link" href="/programme.html">Programme</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/scène.html">Les scènes</a>
+                    <a class="menu__link" href="/artistes.html">Artistes</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="/contact.html">Contact</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="/artistes.html">Liste artistes</a>
+                    <a class="menu__link" href="/scène.html">Scènes</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="/infos.html">Infos pratiques</a>
                 </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/contact.html">Contact</a>
+                </li>
             </ul>
+            <a class="menu__billeterie" href="assets/404.html">
+                <span>Billeterie</span>
+                <img class="menu__billeterie__icon" src="assets/icones/icone billeterie.svg" alt="Billeterie">
+            </a>
         </nav>
     </header>
         <main>
-            <section class="section__hero">
-                <img class="hero__image" src="assets/img/image 1 info pratiques.avif"  alt="image-hero-programme">
-                <h1 class="hero-title">Infos pratiques</h1>
+            <section class="section__hero infos__hero">
+                <img class="hero__image" src="assets/img/drone15.avif" alt="Drones au festival">
+                <h1 class="hero__title">Infos pratiques</h1>
             </section>
-            <section class="section__tarifs">
-                <h2 class="tarifs__title">Tarifs & billeterie</h2>
-                <h2 class="tarifs__titre">Pass 1 jour</h2>
-                <p class="tarifs__texte">
-                    valable 1 jour : samedi ou dimanche
-                </p>
-                <h2 class="tarifs__texte">35€ </h2>
-                <h2 class="tarifs__titre">Acheter</h2>
+            <section class="section__tarifs-billetterie">
+                <h2 class="tarifs__title">Tarifs & Billetterie</h2>
+                
+                <div class="tarif__card">
+                    <h3 class="tarif__name">Pass 1 jour</h3>
+                    <p class="tarif__description">valable 1 jour : samedi ou dimanche</p>
+                    <div class="tarif__price">35 €</div>
+                    <a href="assets/404.html" class="tarif__button">Acheter</a>
+                </div>
+
+                <div class="tarif__card tarif__card--highlight">
+                    <h3 class="tarif__name">Pass 2 jours</h3>
+                    <p class="tarif__description">valable samedi et dimanche</p>
+                    <div class="tarif__price">60 €</div>
+                    <a href="assets/404.html" class="tarif__button tarif__button--white">Acheter</a>
+                </div>
             </section>
-            <section class="section__tarifs">
-                <h2 class="tarifs__titre">Pass 2 jours</h2>
-                <p class="tarifs__texte">
-                    valable samedi et dimanche
-                </p>
-                <h2 class="tarifs__texte">60€ </h2>
-                <h2 class="tarifs__titre">Acheter</h2>
+            <section class="section__hebergements">
+                <div class="hebergements__header">
+                    <h2 class="hebergements__title">Hébergements</h2>
+                    <img class="hebergements__icon" src="assets/icones/icone logo.svg" alt="Logo">
+                </div>
+
+                <div class="hebergement__card">
+                    <h3 class="hebergement__name">Hotels</h3>
+                    <p class="hebergement__text">de nombreux hotels sont disponibles à proximité du parc près la rose</p>
+                    <ul class="hebergement__list">
+                        <li>Hotel Ibis</li>
+                        <li>The original boutique</li>
+                        <li>Kyriad Montbéliard</li>
+                    </ul>
+                </div>
+
+                <div class="hebergement__card">
+                    <h3 class="hebergement__name">Camping</h3>
+                    <p class="hebergement__text">Pour une expérience unique découvrez le camping du parc près la rose</p>
+                </div>
             </section>
-            <section class="section__hebergement">
-                <h2 class="section__hebergement">Hebergement</h2>
-                <h3 class="section__hotels">Hotels </h3>
-                <p class="hebergement__texte">
-                   de nombreux hotels sont 
-                   dispponibles à proximité du 
-                   parc près la rose
-                </p>
-                <p class="hebergement__texte">
-                <ul>
-                <li>Hotel Ibis</li> 
-                <li>The original boutique</li>
-                <li>Kyriad Montbéliard</li>
-                </ul>
+
+            <section class="section__transport">
+                <h2 class="transport__title">Comment venir ?</h2>
+
+                <div class="transport__card">
+                    <h3 class="transport__name">En bus</h3>
+                    <p class="transport__text">Le moyen le plus simple et rapide pour accéder au festival</p>
+                    <ul class="transport__list">
+                        <li>Ligne 2 direction couteau jouvent</li>
+                        <li>Ligne 3 direction couteau jouvent</li>
+                    </ul>
+                </div>
+
+                <div class="transport__card">
+                    <h3 class="transport__name">En voiture</h3>
+                    <p class="transport__text">Plusieurs parking sont disponibles à proximité du festival</p>
+                    <ul class="transport__list">
+                        <li>Parking parc près la rose</li>
+                        <li>Parking du chateau</li>
+                        <li>Parking de la gare</li>
+                    </ul>
+                </div>
             </section>
-            <section class="section__hebergement">
-                <h3 class="section__camping">Camping</h3>
-                <p class="hebergement__texte">
-                   Pour une expérience unique  
-                   découvrez le camping du parc 
-                   les festivaliers 
-                   près la rose
-                </p>
-            </section>
-            <section class="section__acces">
-                <h2 class="section__acces">Comment venir</h2>
-                <h3 class="section__bus">En bus</h3>
-                <p class="acces__texte">
-                   Le moyen le plus simple et
-                   rapide pour accéder au festival
-                </p>
-                <ul>
-                    <li>Ligne 2 direction couteau jouvent</li>
-                    <li>Ligne 3 direction couteau jouvent</li>
-                </ul>
-            </section> 
-            <section class="section__acces">
-                <h3 class="section__voiture">En voiture</h3>
-                <p class="acces__texte">
-                   Plusieurs parking sont 
-                   dispponible à proximité du 
-                   festival
-                </p>
-                <ul>
-                    <li>Parking parc près la rose</li>
-                    <li>Parking du chateau</li>
-                    <li>Parking de la gare</li>
-                </ul>
-            </section>
-            <section class="section__faq" ></section>
-            <h2 class="section__faq">FAQ</h2>
-                <h3 class="faq__question1">Ou se situe le festival ?</h3>
-                <h3 class="faq__question2">
-                    Y'a t-il de la restauration sur 
-                    place ?
-                </h3>
-                <h3 class="faq__question3">
-                    Le festival est il accessible aux 
-                    personnes à mobilité réduite ?
-                </h3> 
+
+            <section class="section__faq">
+                <div class="faq__header">
+                    <img class="faq__icon" src="assets/icones/icone logo.svg" alt="Logo">
+                    <h2 class="faq__title">FAQ</h2>
+                </div>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Où se situe le festival ?</summary>
+                    <p class="faq__answer">Le festival se situe au Parc Près la Rose à Montbéliard.</p>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Y'a t-il de la restauration sur place ?</summary>
+                    <p class="faq__answer">Oui, il y a plusieurs options de restauration disponibles sur le site du festival.</p>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Le festival est il accessible aux personnes à mobilité réduite ?</summary>
+                    <p class="faq__answer">Oui, le festival est accessible aux personnes à mobilité réduite.</p>
+                </details>
             </section>
         </main>
         <footer class="footer">
@@ -146,10 +156,10 @@
         <nav class="footer__nav">
             <ul class="footer__list">
                 <li class="footer__item">
-                    <a href="/festival.html" class="footer__link">Le Festival</a>
+                    <a href="/festival.html" class="footer__link">Le festival</a>
                 </li>
                 <li class="footer__item">
-                    <a href="/programmation.html" class="footer__link">Le programme</a>
+                    <a href="/programme.html" class="footer__link">Le programme</a>
                 </li>
                 <li class="footer__item">
                     <a href="/artistes.html" class="footer__link">Les artistes</a>

@@ -1,0 +1,319 @@
+/* PAGE INFOS PRATIQUES */
+
+/* Hero section */
+.infos__hero {
+  position: relative;
+  margin-top: 70px;
+  background-color: #010811;
+  width: 100%;
+}
+
+.infos__hero .hero__image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.infos__hero .hero__title {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Tarifs & Billetterie */
+.section__tarifs-billetterie {
+  padding: 40px 16px;
+  background-color: #ffffff;
+}
+
+.tarifs__title {
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #010811;
+}
+
+.tarif__card {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 24px 16px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.tarif__card--highlight {
+  background-color: #8ab752;
+  border: none;
+  color: #ffffff;
+}
+
+.tarif__name {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #010811;
+}
+
+.tarif__card--highlight .tarif__name {
+  color: #ffffff;
+}
+
+.tarif__description {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.tarif__card--highlight .tarif__description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tarif__price {
+  margin: 16px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #010811;
+}
+
+.tarif__card--highlight .tarif__price {
+  color: #ffffff;
+}
+
+.tarif__button {
+  display: inline-block;
+  background-color: #8ab752;
+  color: #ffffff;
+  padding: 12px 32px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tarif__button:hover {
+  background-color: #7a9a42;
+}
+
+.tarif__button--white {
+  background-color: #ffffff;
+  color: #010811;
+}
+
+.tarif__button--white:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hébergements */
+.section__hebergements {
+  padding: 40px 16px;
+  background-color: #ffffff;
+}
+
+.hebergements__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.hebergements__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #010811;
+}
+
+.hebergements__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.hebergement__card {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.hebergement__name {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #010811;
+}
+
+.hebergement__text {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.hebergement__list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.hebergement__list li {
+  margin-bottom: 6px;
+}
+
+/* Transport / Comment venir */
+.section__transport {
+  padding: 40px 16px;
+  background-color: #ffffff;
+}
+
+.transport__title {
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #010811;
+}
+
+.transport__card {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.transport__name {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #010811;
+}
+
+.transport__text {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.transport__list {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.transport__list li {
+  margin-bottom: 6px;
+}
+
+/* FAQ */
+.section__faq {
+  padding: 40px 16px;
+  background-color: #ffffff;
+  color: #010811;
+}
+
+.faq__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.faq__icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.faq__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #010811;
+}
+
+.faq__item {
+  background-color: rgba(1, 8, 17, 0.08);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 0;
+  border: none;
+}
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8ab752;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 12px;
+}
+
+.faq__question::before {
+  content: "+";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #8ab752;
+  flex-shrink: 0;
+}
+
+.faq__item[open] .faq__question::before {
+  content: "−";
+}
+
+.faq__answer {
+  margin: 0;
+  padding: 0 16px 16px 48px;
+  font-size: 13px;
+  color: rgba(1, 8, 17, 0.7);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .infos__hero .hero__title {
+    font-size: 32px;
+  }
+
+  .tarifs__title,
+  .transport__title,
+  .faq__title,
+  .hebergements__title {
+    font-size: 24px;
+  }
+
+  .section__tarifs-billetterie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .tarifs__title {
+    grid-column: 1 / -1;
+  }
+}
