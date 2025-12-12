@@ -1,3 +1,10 @@
+/**
+ * INTERACTION : Menu hamburger
+ * Description : Ouverture/fermeture du menu de navigation mobile
+ * URL visible : Toutes les pages du site (header)
+ * Exemples : index.html, festival.html, programme.html, artistes.html, contact.html, etc.
+ */
+
 document.addEventListener('DOMContentLoaded', function() {
   // Sélectionner les éléments du menu
   const menuButton = document.querySelector('.btn__menu');
