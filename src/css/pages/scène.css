@@ -61,7 +61,7 @@
 
 .scene__card {
   max-width: 1200px;
-  margin: 0 auto 32px;
+  margin: 0 auto 20px;
 }
 
 .scene__card__image {
@@ -156,7 +156,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 32px;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
   }
 
   .scene__card:nth-child(2) {
