@@ -74,11 +74,32 @@
 .footer__social__links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .footer__social__link {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+}
+
+.footer__icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.footer__icon[alt*="instagram"] {
+  width: 120%;
+  height: 120%;
+}
+
+.footer__icon[alt*="facebook"] {
+  width: 90%;
+  height: 90%;
 }
 
 
